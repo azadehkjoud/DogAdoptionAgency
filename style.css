@@ -1,0 +1,213 @@
+
+
+/* General body styling */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #deb7b7;
+    align-items: center;
+    /* Light gray background */
+  }
+  /* Main Section Styles */
+main {
+    margin: 2rem 4rem; /* Adds breathing room to the main section */
+}
+
+/* Header and navigation styles */
+header {
+    background-color: #de533d;
+    /* A deep blue color */
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  nav a.logo {
+    font-weight: bold;
+    flex-grow: 1;
+  }
+
+  nav img {
+ 
+    display: block;
+    margin: 2rem auto;
+    /* Center in container */
+    width: 100%;
+    /* Makes image responsive */
+    height: auto;
+    /* Maintains aspect ratio */
+    object-fit: cover;
+    /* Covers the container, may be clipped */
+    max-width: 100px;
+    /* Limits image width */
+    border-radius: 10px;
+    /* Rounds corners */
+    border: 3px solid #05964e;
+    /* Adds a border */
+  }
+
+/* Section Styles */
+section {
+    margin-bottom: 3rem; /* Separates sections with margin */
+}
+
+/* Paragraph Styles */
+p {
+    max-width: auto; /* Limits paragraph width for readability */
+    text-align: left;
+    }
+
+/* Specific Text and Layout Adjustments */
+section li h3,
+section li p {
+    font-size: 0.8rem; /* Reduces font size */
+    letter-spacing: 0.5px; /* Adds letter spacing */
+}
+
+/* Bullet Point Styles */
+section li {
+    margin: 0.5rem; /* Adds spacing between bullet points */
+}
+body li:hover {
+    text-decoration: underline; /* Underlines text on hover */
+    color: rgb(25, 95, 4); /* Changes color on hover */
+}
+/* Pseudo-elements */
+p::first-letter {
+    font-size: 200%;
+    color: rgb(4, 106, 4);
+    /* Targets the first letter of every <p> */
+  }
+  @keyframes fadeInSlideRight {
+    from {
+      opacity: 0;
+      transform: translateX(1000px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  #animated {
+    animation: fadeInSlideRight 4s ease-out forwards;
+  }
+
+  figure img {
+    border-radius: 1rem;
+    border: 0.3rem solid purple;
+    width: 100%;
+  }
+  
+  figure figcaption {
+    text-align: center;
+    font-size: smaller;
+  }
+
+  /* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(255, 165, 0, 0.7);
+    /* Semi-transparent orange */
+  }
+
+  .herosec {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(211, 171, 96, 0.7);
+    /* Semi-transparent orange */
+  }
+  
+  /*.hero h1 {
+    color: #333;
+    margin: 0 0 20px;
+  }*/
+  
+  .hero p {
+    color: rgb(141, 95, 40);
+    /* Black text using RGB */
+  }
+  
+  .cta {
+    display: inline-block;
+    background-color: #4caf50;
+    /* Green button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    
+    
+  }
+  
+  .cta:hover {
+    background-color: #45a049;
+  }
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+/* gallery*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid #ccc 1px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #10576d;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005cbf;
+}
